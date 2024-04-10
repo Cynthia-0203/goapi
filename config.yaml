@@ -1,0 +1,77 @@
+app:
+  name: goapi
+  env: local
+  debug: true
+  log_level: true
+  url: http://localhost:8800
+  port: 8800
+  key: zBqYyQrPNaIUsnRhsGtHLivjqiMjBVLS
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: 123
+  chareset: utf8mb4
+  database: goapi
+  max_idle_connection: 100
+  max_open_connection: 25
+  max_life_seconds: 5*60
+
+
+log:
+  filename: storage/log.log
+  level: debug
+  type: single
+  max_size: 64
+  max_age: 2
+  max_backup: 5
+  compress: false
+
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  username: 
+  password: 
+  database: 1
+
+captcha:
+  height: 80
+  width: 240
+  length: 6
+  maxskew: 0.7
+  dotcount: 80
+  expire_time: 15
+  debug_expire_time: 10080
+  testing_key: captcha_skip_test
+
+aliyun:
+  key_id: LTAI5tQRLmgZCPpUPQMCn1tx
+  key_secret: uOgr1xhcVVFI8npzLJZEt0RuuJmi50
+  sign_name: 阿里云短信测试
+
+  template_code: SMS_154950909
+
+verifycode:
+  code_length: 6
+  expire_time: 15
+  debug_expire_time: 10080
+  debug_code: 123456
+  debug_phone_prefix: 000
+  debug_email_suffix: "@testing.com"
+
+mail: 
+  smtp:
+    host: localhost
+    port: 1025
+    username: 
+    password:
+  from:
+    address: gohub@example.com
+    name: gohub
+
+jwt:
+  expire_time: 120
+  max_refresh_time: 86400
+  debug_expire_time: 86400
