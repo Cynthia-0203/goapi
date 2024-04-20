@@ -47,8 +47,7 @@ captcha:
   testing_key: captcha_skip_test
 
 aliyun:
-  # key_id: LTAI5tQRLmgZCPpUPQMCn1tx
-  # key_secret: uOgr1xhcVVFI8npzLJZEt0RuuJmi50
+  
   sign_name: 阿里云短信测试
 
   template_code: SMS_154950909
